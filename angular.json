@@ -107,6 +107,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-pwa-redirect"
+    }
+  },
+  "defaultProject": "ng-pwa-redirect",
+  "cli": {
+    "packageManager": "yarn"
+  }
 }

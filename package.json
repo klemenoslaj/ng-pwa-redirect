@@ -2,14 +2,15 @@
   "name": "ng-pwa-redirect",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "server:build": "yarn workspace demo-server build",
+    "server:start": "yarn workspace demo-server start",
+    "server:start-redirect": "yarn workspace demo-server start true",
+    "app:build": "ng build --prod"
   },
   "private": true,
+  "workspaces": [
+    "server"
+  ],
   "dependencies": {
     "@angular/animations": "~10.0.5",
     "@angular/common": "~10.0.5",
